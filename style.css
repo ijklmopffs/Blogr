@@ -1,0 +1,355 @@
+body {
+  margin: 0;
+  font-family: "Overpass", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header {
+  background-color: hsl(353, 100%, 62%);
+  height: 55vh;
+  border-bottom-left-radius: 80px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+}
+.links {
+  display: flex;
+  position: relative;
+}
+.hamburger {
+  display: none;
+}
+.nav_items {
+  text-decoration: none;
+  color: white;
+}
+.special {
+  display: block;
+}
+.links div + div {
+  margin-inline-start: 25px;
+}
+.dropdown.show {
+  display: flex;
+  width: 27%;
+}
+.dropdown {
+  display: none;
+  flex-direction: column;
+  margin-inline-start: 10px;
+  background-color: white;
+  padding: 10px;
+  margin: 5px;
+  position: absolute;
+  right: 68%;
+  border-radius: 5px;
+}
+.dropdown a + a {
+  margin-block-start: 5px;
+}
+.dropdown a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.two {
+  right: 63%;
+  left: 32%;
+}
+.ham {
+  display: none;
+}
+.three {
+  right: 55%;
+  left: 72%;
+}
+.dropdown_item {
+  text-decoration: none;
+  color: black;
+}
+.first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.logo {
+  margin-inline-end: 30px;
+}
+.login {
+  padding: 20px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+  font-size: 0.8em;
+}
+.signup {
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: none;
+  color: hsl(353, 100%, 62%);
+  background-color: white;
+  font-weight: 900;
+}
+.signup:hover {
+  color: white;
+  background-color: hsl(355, 100%, 74%);
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.text h1 {
+  font-size: 3.5em;
+  margin-block-end: 0;
+}
+.text p {
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: "Overpass", sans-serif;
+}
+.text button {
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.free {
+  color: hsl(353, 100%, 62%);
+  font-weight: 800;
+  border: none;
+}
+.free:hover {
+  color: white;
+  background-color: hsl(355, 100%, 74%);
+}
+.more {
+  background-color: transparent;
+  border: 1px solid hsl(240, 2%, 79%);
+  color: white;
+  font-weight: 800;
+}
+.more:hover {
+  color: hsl(353, 100%, 62%);
+  background-color: white;
+}
+.one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-start: 50px;
+  justify-content: center;
+}
+.one h2 {
+  font-size: 2.5em;
+  color: hsl(237, 17%, 21%);
+}
+.one p {
+  width: 390px;
+  color: hsl(240, 2%, 79%);
+  letter-spacing: 0.2px;
+}
+.inner_one {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-inline-start: 100px;
+}
+.image_container img {
+  width: 90%;
+}
+.art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(237, 17%, 21%);
+  height: 55vh;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  color: white;
+  margin-block-start: 50px;
+}
+.art p {
+  width: 400px;
+  font-weight: 800;
+}
+.laptop {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.laptop img {
+  width: 100%;
+  position: relative;
+  right: 28%;
+}
+.laptop_img {
+  width: 100%;
+}
+.laptop_text {
+  width: 100%;
+}
+.laptop h2 {
+  font-size: 2.5em;
+  color: hsl(237, 17%, 21%);
+}
+.laptop p {
+  width: 380px;
+  color: hsl(240, 2%, 79%);
+  letter-spacing: 0.2px;
+}
+.footer {
+  background-color: hsl(240, 10%, 16%);
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  color: white;
+  margin-top: 50px;
+  border-top-right-radius: 80px;
+}
+.footer_items {
+  display: flex;
+  flex-direction: column;
+}
+.footer_items a {
+  color: hsl(240, 2%, 79%);
+  text-decoration: none;
+  margin-top: 10px;
+}
+.footer_items a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 576px) {
+  .links {
+    display: none;
+    flex-direction: column;
+    color: black;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    right: -41%;
+    top: 11%;
+    width: 60%;
+    height: 50%;
+    background-color: white;
+    border-radius: 7px;
+  }
+  .links a {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+  }
+  .dropdown {
+    position: relative;
+    margin-inline-start: 0;
+    margin: 0;
+    margin-inline-end: 30px;
+    background-color: hsl(240, 2%, 79%);
+    align-items: center;
+    top: -14%;
+    left: -5%;
+  }
+  .dropdown.show {
+    width: 100%;
+  }
+  .links div {
+    margin-block-start: 40px;
+    color: black;
+  }
+  .links div + div {
+    margin-inline-start: 0;
+    margin-block-start: 40px;
+  }
+  .links.active {
+    transform: translateX(-100%);
+    display: flex;
+    align-items: center;
+  }
+  .hamburger {
+    display: flex;
+    margin-block-start: 10px;
+  }
+  .ham {
+    display: flex;
+  }
+  .text h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: normal;
+  }
+  .text p {
+    width: 235px;
+    text-align: center;
+  }
+  .inner_one {
+    flex-direction: column-reverse;
+    margin-inline-start: 0;
+  }
+  .image_container img {
+    width: 100%;
+  }
+  .one h2 {
+    text-align: center;
+    width: 250px;
+    font-weight: normal;
+  }
+  .one p {
+    text-align: center;
+    width: 239px;
+  }
+  .art {
+    flex-direction: column;
+    height: 90vh;
+    margin-block-start: 100px;
+  }
+  .art img {
+    width: 100%;
+    margin-block-start: -200px;
+  }
+  .art h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-block-start: 0;
+  }
+  .art p {
+    text-align: center;
+    width: 240px;
+    font-weight: normal;
+    margin: 0 auto;
+  }
+  .laptop {
+    flex-direction: column;
+  }
+  .laptop img {
+    position: static;
+  }
+  .laptop_text {
+    text-align: center;
+  }
+  .laptop h2 {
+    font-weight: normal;
+  }
+  .laptop p {
+    width: 240px;
+    margin: 0 auto;
+    letter-spacing: 1.5px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .art p {
+    width: 100%;
+  }
+}
