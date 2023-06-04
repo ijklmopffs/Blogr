@@ -11,11 +11,9 @@ const dropdowns = [
   document.getElementById("myDropdown3"),
 ];
 
-// Attach click event listener using a loop
 buttons.forEach((button, index) => {
   button.addEventListener("click", () => {
     dropdowns[index].classList.toggle("show");
-    console.log("worked");
   });
 });
 

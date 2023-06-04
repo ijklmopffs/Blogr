@@ -7,7 +7,7 @@ body {
   justify-content: center;
 }
 header {
-  background-color: hsl(353, 100%, 62%);
+  background-color: hsl(355, 100%, 74%);
   height: 55vh;
   border-bottom-left-radius: 80px;
 }
@@ -87,18 +87,20 @@ header {
   color: white;
   font-weight: 700;
   font-size: 0.8em;
+  cursor: pointer;
 }
 .signup {
   padding: 5px 20px;
   border-radius: 20px;
   border: none;
-  color: hsl(353, 100%, 62%);
+  color: hsl(355, 100%, 74%);
   background-color: white;
   font-weight: 900;
+  cursor: pointer;
 }
 .signup:hover {
   color: white;
-  background-color: hsl(355, 100%, 74%);
+  background-color: hsl(353, 100%, 62%);
 }
 .text {
   display: flex;
