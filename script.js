@@ -13,6 +13,14 @@ const dropdowns = [
 
 buttons.forEach((button, index) => {
   button.addEventListener("click", () => {
+    // Close all open dropdowns
+    dropdowns.forEach((dropdown, dropdownIndex) => {
+      if (dropdownIndex !== index) {
+        dropdown.classList.remove("show");
+      }
+    });
+
+    // Toggle the selected dropdown
     dropdowns[index].classList.toggle("show");
   });
 });
